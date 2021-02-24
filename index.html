@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/frame/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/        
+            background-color: #63a4ff;
+            background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+            font-family: Arial;
+        }
+        .lista
+        {
+            list-style: none;
+            display: inline-block;
+            padding: 100px;
+            
+        }
+        .li1
+        {
+            display: inline-block;
+            padding: 10px;
+            color: black;
+            width: 280px;
+            height: 280px;
+            background-color: white;
+            text-align: center;
+            border-radius: 3%;
+            border: none;
+            transition: transform 1s;
+            transform: translateX(20) scale(0.5);
+            outline: none;
+        }
+        .li1:hover,
+        .li1:focus
+        {
+            width: 310px;
+            height: 310px;
+            transform-style: flat;
+            background-color: gainsboro;        
+            transform: translateX(5px) scale(1.2);
+        } 
+        .d
+        {
+            display: inline-block;
+        }
+        a 
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example 
+        {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <div class="container text-center">
+        <div>
+            <h1 class="pt-2" >SISTEMA DE CADASTRO DE FUNCIONARIOS</h1>
+            <ul class="lista">
+                <li class="d">
+                   <a href="view/Rota1.php" >
+                        <button class="li1">
+                            <img src="assets/img/1.png" alt="" style="width: 50%; height: 50%;">
+                            <h3>Cadastrar Funcionario</h3>
+                        </button>
+                   </a>
+                </li>
+                <li class="d">
+                    <a href="" >
+                        <button class="li1">
+                            <img src="assets/img/2.png" alt="" style="width: 50%; height: 50%;">
+                            <h3>Pesquisar Funcionário</h3>
+                        </button>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <footer>
+            <div class="container text-center">
+                <p>Sistema de Cadastro de Funcionários <br> Copirigth &copy;2021 Todos direitos reservados <br>
+                Dev.By. Luís Caputo.</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
