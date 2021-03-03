@@ -71,6 +71,15 @@ const  addequipa = async () => {
     senha: valor_da_txt('senhauser'),
     imagem: valor_da_txt('fotouser'),
   };
+
+  const obex = {
+    "method":"Upload",
+    "user":
+    {
+      "profile_user":""
+    }
+  }
+  
   
   methodPost(objequipa,'https://localhost:5001/CreatNewuser/CreatNewuser');
 
